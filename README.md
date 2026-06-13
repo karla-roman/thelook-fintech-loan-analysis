@@ -1,11 +1,12 @@
 # TheLook Fintech Loan Analysis
-Created by [Karla Roman](https://github.com/karla-roman)
 
 ![BigQuery](https://img.shields.io/badge/BigQuery-Google%20Cloud-blue)
 ![SQL](https://img.shields.io/badge/SQL-Analytics-orange)
 ![Looker](https://img.shields.io/badge/Looker-BI-green)
 
 Data analysis project developed using **Google BigQuery**, **SQL**, and **Looker Enterprise** to support business decisions for a fintech lending company.
+
+Created by [Karla Roman](https://github.com/karla-roman)
 
 ---
 
