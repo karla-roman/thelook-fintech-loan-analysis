@@ -1,4 +1,5 @@
 # TheLook Fintech Loan Analysis
+Created by [Karla Roman](https://github.com/karla-roman)
 
 ![BigQuery](https://img.shields.io/badge/BigQuery-Google%20Cloud-blue)
 ![SQL](https://img.shields.io/badge/SQL-Analytics-orange)
@@ -13,6 +14,8 @@ Data analysis project developed using **Google BigQuery**, **SQL**, and **Looker
 The Treasury team at TheLook Fintech needed better visibility into their loan portfolio to monitor cash flow, understand borrower behavior, and evaluate lending risk.
 
 The goal of this project was to collect, transform, and analyze loan data, then create business-ready reports and dashboards that support daily decision-making.
+
+![Dashboard Overview](images/dashboard_overview.png)
 
 ---
 
@@ -66,51 +69,12 @@ Business Dashboard
 
 ## Data Processing
 
-### 1. Regional Classification
-
-Imported an external dataset containing U.S. states, regions, and subregions to support geographic analysis.
-
-**SQL File**
-
-```text
-sql/create_state_region_table.sql
-```
-
----
-
-### 2. Loan Region Report
-
-Combined loan records with regional information to enable location-based reporting and risk analysis.
-
-**SQL File**
-
-```text
-sql/loan_region_report.sql
-```
-
----
-
-### 3. Loan Purpose Analysis
-
-Extracted and deduplicated borrower loan purposes to identify the most common reasons customers request funding.
-
-**SQL File**
-
-```text
-sql/loan_purposes.sql
-```
-
----
-
-### 4. Loan Trend Analysis
-
-Created yearly aggregated metrics to evaluate loan activity over time.
-
-**SQL File**
-
-```text
-sql/loan_count_by_year.sql
-```
+| File                                                               | Description                         |
+| ------------------------------------------------------------------ | ----------------------------------- |
+| [create_state_region_table.sql](sql/create_state_region_table.sql) | Import regional classification data |
+| [loan_region_report.sql](sql/loan_region_report.sql)               | Join loan and regional data         |
+| [loan_purposes.sql](sql/loan_purposes.sql)                         | Create distinct loan purposes       |
+| [loan_count_by_year.sql](sql/loan_count_by_year.sql)               | Count loans by year                 |
 
 ---
 
